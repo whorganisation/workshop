@@ -68,7 +68,7 @@ header::before {
 .heading-primary-sub {
     color: #fff;
 	display: block;
-	font-size: 15px;
+	font-size: 10px;
 	font-weight: 100;
 	letter-spacing: 2px;
 	animation: moveInRight 1s ease-out;
