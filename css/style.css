@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "lato", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #fff;
+    background-color: black;
+}
+
+header {
+    
+	height: 100vh;
+	background-image: Url(../images/storm1.jpg);
+	background-size: cover;
+	background-position: top;
+	position: relative;
+    background-size: cover;
+
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.349);
+ 
+}
+
+
+.text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.heading-primary {
+	color: #fff;
+	backface-visibility: hidden;
+}
+
+.heading-primary-main {
+    color: #fff;
+	display: block;
+	font-size: 45px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	animation-name: moveInLeft;
+	animation-duration: 1s;
+
+
+	/*
+	animation-delay: 3s;
+	animation-iteration-count: 3;
+	*/
+
+}
+
+.heading-primary-sub {
+    color: #fff;
+	display: block;
+	font-size: 20px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+	0% {
+			opacity: 0;
+			transform: translateX(-100px);
+	}
+
+	80% {
+			transform: translateX(10px);
+	}
+
+	100% {
+			opacity: 1;
+			transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+			opacity: 0;
+			transform: translateX(100px);
+	}
+
+	80% {
+			transform: translateX(-10px);
+	}
+
+	100% {
+			opacity: 1;
+			transform: translate(0);
+	}
+}
